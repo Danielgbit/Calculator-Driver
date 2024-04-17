@@ -44,18 +44,18 @@ const Calculate = () => {
     <div className="calculate-body">
         <form onSubmit={handleOnSubmit} className="calculate-form">
             <div className="calculate-input-container">
-                <label htmlFor="kilometros">Kilometros</label>
-                <input onChange={handleOnChange} required="required" name="kilometros" type="number" placeholder="Ingrese los kilometros"/>
-            </div>
-
-            <div className="calculate-input-container">
                 <label htmlFor="tiempo">Tiempo</label>
                 <input onChange={handleOnChange} required="required" name="tiempo" type="number" placeholder="Ingrese el tiempo"/>
             </div>
+
+            <div className="calculate-input-container">
+                <label htmlFor="kilometros">Kilometros</label>
+                <input onChange={handleOnChange} required="required" name="kilometros" type="number" placeholder="Ingrese los kilometros"/>
+            </div>
         </form>
 
-        <div className="result-container" style={{ backgroundColor: result > 0 && '#9FB54A', transition: 'all 500ms ease-in-out'}}>
-            { result > 0 && <p style={{ transition: 'all 400ms ease-in-out' }}>🔸 Precio cercano</p>}
+        <div className="result-container" style={{ backgroundColor: result > 0 && '#9FB54A', transition: 'all 150ms ease-in-out'}}>
+            { result > 0 && <p style={{ transition: 'all 150ms ease-in-out' }}>🔸 Precio cercano</p>}
             <span>{formatNumber(result)}</span>
         </div>
     </div>

@@ -15,7 +15,7 @@ export default defineConfig({
         short_name: 'Calculator',
         description: 'Calculador de precios driver',
         theme_color: '#000',
-        background_color: '#ffffff',
+        background_color: '#ffffff', 
         icons: [
           {
             src: 'pwa-64x64.png',
